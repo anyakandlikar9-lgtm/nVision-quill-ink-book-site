@@ -13,6 +13,7 @@
   left:0;
   right:0;
   height: 77px;
+  z-index: 999;
 }x
 
 .quill-left-section{

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quill & Ink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/quill.css">
+    <link rel="stylesheet" href="style/book.css">
+    <link rel="stylesheet" href="style/quill-header.css">
+    <link rel="stylesheet" href="style/quill-general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/calendar.css">
+    <script src="https://kit.fontawesome.com/64f98c8be8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="quill-header">
+      <div class="quill-left-section">
+        <a href="./home.html" class="header-link">
+          <img class="quill-logo"
+          src="img/quill-logo.png">
+        </a>
+      </div>
+
+      <div class="quill-middle-section">
+        <input class="search-bar js-search-bar" type="text" placeholder="Search">
+
+        <button class="search-button js-search-bt">
+          <img class="search-icon" src="img/search.png">
+        </button>
+      </div>
+
+      <div class="quill-right-section">
+        <a class="order-link header-link" href="./return-order.html">
+          <span class="return-text">Returns</span>
+          <span class="order-text"> & Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="./checkout-books.html">
+          <img class="cart-icon" src="img/cart-empty.png">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text"></div>
+        </a>
+      </div>
+    </div>
+
+    <div id="calendar-space">
+        </div>
+        <div id="event-details" class="inactive">
+          <div class="event-header">
+          <h3 id="event-title"></h3><i class="fa-solid fa-x"></i>
+          </div>
+          <p id="event-description"></p>
+        </div>
+
+    <script src="./script/calendar.js"></script>
+
+    </body>
+</html>
