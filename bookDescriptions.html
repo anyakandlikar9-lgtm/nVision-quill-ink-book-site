@@ -1,147 +1,125 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> Quill & Ink details</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/home-header.css">
-    <link rel="stylesheet" href="style/details.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/descripBooks.css">
-  </head>
-  <body>
-    <div class="quill-details-header">
-      <div class="quill-details-left-section">
-        <a href="./home.html" class="header-link">
-          <img class="quill-details-logo"
-          src="img/quill-logo.png">
-        </a>
-      </div>
+const books = {
+      invisible: {
+        title: "The Invisible Life of Addie LaRue ",
+        author: "V.E. Schwab",
+        img: "img/book/trending-booke-one.png",
+        desc: "Addie LaRue makes a deal with the devil for eternal life, but the catch is that everyone she meets forgets her the moment she’s out of sight. For centuries, she wanders through history, unseen and unremembered, until one day, someone finally remembers her. This is a haunting, romantic story about identity and legacy and what it means to truly be seen. This book was so emotional. Addie’s story will stay with me forever. Took me a minute to get into, but once I did, wow. The writing is pure magic. Made me want to live a thousand lives just to leave a mark like Addie."
+      },
+      fearless: {
+        title: "Fearless",
+        author: "Lauren Roberts",
+        img: "img/book/trending-booke-two.png",
+        desc: "Following the events of Powerless, Paedyn and Kai face a kingdom on the edge of chaos. Loyalties are tested, secrets unravel, and the line between love and duty blurs more than ever. The romance is tense, the stakes are higher, and every chapter feels like it’s ready to explode. It’s an emotional rollercoaster that leaves you desperate for the next book. "
+      },
+      silent: {
+        title: "The Silent Patient",
+        author: "Alex Michaelides",
+        img: "img/book/trending-booke-four.png",
+        desc: "When famous painter Alicia Berenson shoots her husband and stops speaking entirely, she is sent to a secure psychiatric facility. Theo Faber, a psychotherapist, becomes obsessed with finding out the truth behind her silence."
+      },
+      seven: {
+        title: "The Seven Year Slip",
+        author: "Ashley Poston",
+        img: "img/book/trending-booke-three.png",
+        desc: "A book editor, grieving the death of her partner, finds that her apartment sometimes connects her to another timeline, seven years in the past. When she meets a man living in that version of her apartment, their lives intertwine in ways neither can explain. It’s emotional, clever, and quietly magical. Ashley Poston perfectly captures grief, healing, and a love that transcends time."
+      },
+      women: {
+        title: "The Women",
+        author: "Kristin Hannah",
+        img: "img/book/trending-booke-five.png",
+        desc: "Set during the Vietnam War, The Women follows Frances “Frankie” McGrath, a nurse who enlists to serve and discovers the brutal realities of war. It’s a story of courage, trauma, and sisterhood, showing the untold struggles of women who fought to be seen."
+      },
+        evelyn: {
+        title: "The Seven Husbands of Evelyn Hugo",
+        author: "Taylor Jenkins Reid",
+        img: "img/book/trending-booke-six.png",
+        desc: "When Hollywood legend Evelyn Hugo finally agrees to tell the story of her glamorous and scandalous life, she tells it to Monique Grant, an unknown journalist. As Evelyn recounts her glamorous and scandalous past, her seven marriages, her secrets, and her true love, Monique learns more about herself than she expects. It’s dramatic, emotional, and layered."
+      },
+      bride: {
+        title: "Bride",
+        author: "Ali Hazelwood",
+        img: "img/book/trending-booke-seven.png",
+        desc: "Misery Lark, the only daughter of a powerful vampire family, is forced into a marriage alliance with a werewolf alpha. What starts as political convenience turns into an unexpectedly steamy, emotional romance. Ali Hazelwood delivers her signature mix of wit, sciencey humor, and swoon-worthy chemistry but in a supernatural twist. It’s fast-paced and fun. "
+      },
+      voice: {
+        title: "Archer's Voice",
+        author: "Mia Sheridan",
+        img: "img/book/trending-booke-eight.png",
+        desc: "Bree Prescott moves to a small town in search of peace, but what she finds is Archer Hale, a quiet, isolated man with a painful past. Their connection grows slowly, built on trust, silence, and understanding. This is an emotional, tender love story about healing and vulnerability. Have tissues ready. "
+      },
+      funny: {
+        title: "Funny Story",
+        author: "Emily Henry",
+        img: "img/book/trending-booke-nine.png",
+        desc: "Daphne always loved the way her fiancé, Peter, told their story. How they met (on a blustery day), fell in love (over an errant hat), and moved back to his lakeside hometown to begin their life together. He really was good at telling it... right up until the moment he realized he was actually in love with his childhood best friend Petra."
+      },
+      normal: {
+        title: "Normal People",
+        author: "Sally Rooney",
+        img: "img/book/trending-booke-ten.png",
+        desc: "Connell and Marianne grow up in the same small Irish town but come from different worlds. Their relationship, sometimes romantic, sometimes distant, follows them through years of love, miscommunication, and emotional growth. Sally Rooney does a great job at showing the intensity of young adulthood. "
+      },
+      assistant: {
+        title: "Assistant to the Villian",
+        author: "Hannah Nicole Maehrer",
+        img: "img/book/trending-booke-eleven.png",
+        desc: "Evie Sage accidentally lands a job working for the realm’s most notorious villain, and finds out that being his assistant involves as much chaos as it does paperwork. Quirky, funny, and packed with banter and slow-burn tension. It’s a perfect mix of fantasy adventure and office rom-com energy.  "
+      },
+      unmaking: {
+        title: "The Unmaking of June Farrow",
+        author: "Adrienne Young",
+        img: "img/book/trending-booke-twelve.png",
+        desc: "June Farrow and the other women in her family are haunted by strange visions and whispers. When she discovers a mysterious door, she steps into another world and reveals secrets that could change everything she knows. This fantasy romance is the perfect casual read."
+      },
+      housemaid: {
+        title: "The Housemaid",
+        author: "Freida McFadden",
+        img: "img/book/trending-booke-thirteen.png",
+        desc: "Millie takes a job working for a wealthy family but soon realizes something interesting about the house. There’s something about it and the people in it that isn’t quite right. There are locked doors, lies, and tension. A fast-paced story with a dark twist. "
+      },
+      little: {
+        title: "Little Women",
+        author: "Louise Mary Alcott",
+        img: "img/book/trending-booke-fourteen.png",
+        desc: " The four March sisters, Meg, Jo, Beth, and Amy grew up during the Civil War and learned about love, family, and independence. Each sister has her own dreams and struggles. The warm, heartfelt, and timeless story is relatable in some way for everyone. "
+      },
+      broken: {
+        title: "Once Upon A Broken Heart",
+        author: "Stephanie Garber",
+        img: "img/book/trending-booke-fifteen.png",
+        desc: "The pink haired Evangeline Fox makes a deal with the charming but dangerous Prince of Hearts, Jacks, after her love story ended in betrayal. All magic comes with a price, so Evangeline finds herself caught in a web of love, lies, and fate. "
+      },
+      educated: {
+        title: "Educated",
+        author: "Tara Westover",
+        img: "img/book/trending-booke-sixteen.png",
+        desc: "Growing up in a strict, isolated family with no formal education made it hard for Tara Westover on her journey to earn a PhD from Cambridge, but she made it happen. In her memoir, her story is raw, powerful, and deeply inspiring. Read as she redefines herself and grows into the person she is today. "
+      },
+      powerless: {
+        title: "Powerless",
+        author: "Lauren Roberts",
+        img: "img/book/trending-booke-seventeen.png",
+        desc: "Paedyn Gray hides in plain sight, an ordinary in a world of elites. When she crosses paths with Kai, a powerful prince whose mission is to rid the world of ordinaries, both of their lives turn upside down. It’s a thrilling enemies to lovers fantasy with rebellion, secrets, and serious tension. "
+      },
+      bell: {
+        title: "The Bell Jar",
+        author: "Sylvia Plath",
+        img: "img/book/trending-booke-eighteen.png",
+        desc: "Under the pressure of expectations and mental illness, Esther Greenwood struggles to have it all. This semi-autobiographical novel is beautifully written and very honest. The emotional exploration of identity explores what it’s like to feel trapped in your own life. "
+      },
+    };
 
-      <div class="quill-details-middle-section">
-        <input class="search-bar js-search-bar" type="text" placeholder="Search">
+    function showBook(id) {
+      const book = books[id];
+      document.getElementById("bookList").style.display = "none";
+      document.getElementById("bookDetail").style.display = "block";
+      document.getElementById("detailTitle").textContent = book.title;
+      document.getElementById("detailAuthor").textContent = "by " + book.author;
+      document.getElementById("detailDesc").textContent = book.desc;
+      document.getElementById("detailImg").src = book.img;
+    }
 
-        <button class="search-home-button js-search-bt">
-          <img class="search-details-icon" src="img/search.png">
-        </button>
-      </div>
-
-      <div class="quill-details-right-section">
-        <a class="quill-and-ink-details" href="more-details.html">
-          <div class="deets">Quill & Ink Details</div>
-        </a>
-      </div>
-    </div>
-    
-     <div class="content" id="bookList">
-    <div class="book-card" onclick="showBook('invisible')">
-      <img src="img/trending-booke-one.png" alt="The Invisible Life of Addie Larue">
-      <h2>The Invisible Life of Addie Larue</h2>
-      <p class="author">by V.E. Schwab</p>
-    </div>
-    <div class="book-card" onclick="showBook('fearless')">
-      <img src="img/trending-booke-two.png" alt="Fearless">
-      <h2>Fearless</h2>
-      <p class="author">by Lauren Roberts</p>
-    </div>
-    <div class="book-card" onclick="showBook('seven')">
-      <img src="img/trending-booke-three.png" alt="The Seven Year Slip">
-      <h2>The Seven Year Slip</h2>
-      <p class="author">by Ashley Poston</p>
-    </div>
-    <div class="book-card" onclick="showBook('silent')">
-      <img src="img/trending-booke-four.png" alt="The Silent Patient">
-      <h2>The Silent Patient</h2>
-      <p class="author">by Alex Michaelides</p>
-    </div>
-    <div class="book-card" onclick="showBook('women')">
-      <img src="img/trending-booke-five.png" alt="The Women">
-      <h2>The Women</h2>
-      <p class="author">by Kristin Hannah</p>
-    </div>
-    <div class="book-card" onclick="showBook('evelyn')">
-      <img src="img/trending-booke-six.png" alt="The Seven Husbands of Evelyn Hugo">
-      <h2>The Seven Husbands of Evelyn Hugo</h2>
-      <p class="author">by Taylor Jenkins Reid</p>
-    </div>
-    <div class="book-card" onclick="showBook('bride')">
-      <img src="img/trending-booke-seven.png" alt="Bride">
-      <h2>Bride</h2>
-      <p class="author">by Ali Hazelwood</p>
-    </div>
-    <div class="book-card" onclick="showBook('voice')">
-      <img src="img/trending-booke-eight.png" alt="Archer's Voice">
-      <h2>Archer's Voice</h2>
-      <p class="author">by Mia Sheridan</p>
-    </div>
-    <div class="book-card" onclick="showBook('story')">
-      <img src="img/trending-booke-nine.png" alt="Funny Story">
-      <h2>Funny Story</h2>
-      <p class="author">by Emily Henry</p>
-    </div>
-    <div class="book-card" onclick="showBook('normal')">
-      <img src="img/trending-booke-ten.png" alt="Normal People">
-      <h2>Normal People</h2>
-      <p class="author">by Sally Rooney</p>
-    </div>
-    <div class="book-card" onclick="showBook('assistant')">
-      <img src="img/trending-booke-eleven.png" alt="Assistant to the Villian">
-      <h2>Assistant to the Villian</h2>
-      <p class="author">by Hannah Nicole Maehrer</p>
-    </div>
-    <div class="book-card" onclick="showBook('unmaking')">
-      <img src="img/trending-booke-twelve.png" alt="The Unmaking of June Farrow">
-      <h2>The Unmaking of June Farrow</h2>
-      <p class="author">by Adrienne Young</p>
-    </div>
-    <div class="book-card" onclick="showBook('housemaid')">
-      <img src="img/trending-booke-thirteen.png" alt="The Housemaid">
-      <h2>The Housemaid</h2>
-      <p class="author">by Freida McFadden</p>
-    </div>
-    <div class="book-card" onclick="showBook('little')">
-      <img src="img/trending-booke-fourteen.png" alt="Little Women">
-      <h2>Little Women</h2>
-      <p class="author">by Louise Mary Alcott</p>
-    </div>
-    <div class="book-card" onclick="showBook('broken')">
-      <img src="img/trending-booke-fifteen.png" alt="Once Upon A Broken Heart">
-      <h2>Once Upon A Broken Heart</h2>
-      <p class="author">by Stephanie Garber</p>
-    </div>
-    <div class="book-card" onclick="showBook('educated')">
-      <img src="img/trending-booke-sixteen.png" alt="Educated">
-      <h2>Educated</h2>
-      <p class="author">by Tara Westover</p>
-    </div>
-    <div class="book-card" onclick="showBook('powerless')">
-      <img src="img/trending-booke-seventeen.png" alt="Powerless">
-      <h2>Powerless</h2>
-      <p class="author">by Lauren Roberts</p>
-    </div>
-    <div class="book-card" onclick="showBook('bell')">
-      <img src="img/trending-booke-eighteen.png" alt="The Bell Jar">
-      <h2>The Bell Jar</h2>
-      <p class="author">by Sylvia Plath</p>
-    </div>
-  </div>
-
-  <!-- BOOK DETAIL VIEW -->
-  <div class="book-detail" id="bookDetail">
-    <img id="detailImg" src="">
-    <h2 id="detailTitle"></h2>
-    <p class="author" id="detailAuthor"></p>
-    <p id="detailDesc"></p>
-    <button class="back-button" onclick="goBack()">← Back to all books</button>
-  </div>
-
-  <script src="script/descripBooks.js"></script>
-  </body>
-</html>
+    function goBack() {
+      document.getElementById("bookList").style.display = "flex";
+      document.getElementById("bookDetail").style.display = "none";
+    }
