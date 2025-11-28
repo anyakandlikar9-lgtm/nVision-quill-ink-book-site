@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quill & Ink details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/home-header.css">
+    <link rel="stylesheet" href="style/details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/descripBooks.css">
+  </head>
+  <body>
+    <div class="quill-details-header">
+      <div class="quill-details-left-section">
+        <a href="./home.html" class="header-link">
+          <img class="quill-details-logo"
+          src="img/quill-logo.png">
+        </a>
+      </div>
+
+      <div class="quill-details-middle-section">
+        <input class="search-bar js-search-bar" type="text" placeholder="Search">
+
+        <button class="search-home-button js-search-bt">
+          <img class="search-details-icon" src="img/search.png">
+        </button>
+      </div>
+
+      <div class="quill-details-right-section">
+        <a class="quill-and-ink-details" href="more-details.html">
+          <div class="deets">Quill & Ink Details</div>
+        </a>
+      </div>
+    </div>
+    
+     <div class="content" id="bookList">
+    <div class="book-card" onclick="showBook('invisible')">
+      <img src="img/trending-booke-one.png" alt="The Invisible Life of Addie Larue">
+      <h2>The Invisible Life of Addie Larue</h2>
+      <p class="author">by V.E. Schwab</p>
+    </div>
+    <div class="book-card" onclick="showBook('fearless')">
+      <img src="img/trending-booke-two.png" alt="Fearless">
+      <h2>Fearless</h2>
+      <p class="author">by Lauren Roberts</p>
+    </div>
+    <div class="book-card" onclick="showBook('seven')">
+      <img src="img/trending-booke-three.png" alt="The Seven Year Slip">
+      <h2>The Seven Year Slip</h2>
+      <p class="author">by Ashley Poston</p>
+    </div>
+    <div class="book-card" onclick="showBook('silent')">
+      <img src="img/trending-booke-four.png" alt="The Silent Patient">
+      <h2>The Silent Patient</h2>
+      <p class="author">by Alex Michaelides</p>
+    </div>
+    <div class="book-card" onclick="showBook('women')">
+      <img src="img/trending-booke-five.png" alt="The Women">
+      <h2>The Women</h2>
+      <p class="author">by Kristin Hannah</p>
+    </div>
+    <div class="book-card" onclick="showBook('evelyn')">
+      <img src="img/trending-booke-six.png" alt="The Seven Husbands of Evelyn Hugo">
+      <h2>The Seven Husbands of Evelyn Hugo</h2>
+      <p class="author">by Taylor Jenkins Reid</p>
+    </div>
+    <div class="book-card" onclick="showBook('bride')">
+      <img src="img/trending-booke-seven.png" alt="Bride">
+      <h2>Bride</h2>
+      <p class="author">by Ali Hazelwood</p>
+    </div>
+    <div class="book-card" onclick="showBook('voice')">
+      <img src="img/trending-booke-eight.png" alt="Archer's Voice">
+      <h2>Archer's Voice</h2>
+      <p class="author">by Mia Sheridan</p>
+    </div>
+    <div class="book-card" onclick="showBook('story')">
+      <img src="img/trending-booke-nine.png" alt="Funny Story">
+      <h2>Funny Story</h2>
+      <p class="author">by Emily Henry</p>
+    </div>
+    <div class="book-card" onclick="showBook('normal')">
+      <img src="img/trending-booke-ten.png" alt="Normal People">
+      <h2>Normal People</h2>
+      <p class="author">by Sally Rooney</p>
+    </div>
+    <div class="book-card" onclick="showBook('assistant')">
+      <img src="img/trending-booke-eleven.png" alt="Assistant to the Villian">
+      <h2>Assistant to the Villian</h2>
+      <p class="author">by Hannah Nicole Maehrer</p>
+    </div>
+    <div class="book-card" onclick="showBook('unmaking')">
+      <img src="img/trending-booke-twelve.png" alt="The Unmaking of June Farrow">
+      <h2>The Unmaking of June Farrow</h2>
+      <p class="author">by Adrienne Young</p>
+    </div>
+    <div class="book-card" onclick="showBook('housemaid')">
+      <img src="img/trending-booke-thirteen.png" alt="The Housemaid">
+      <h2>The Housemaid</h2>
+      <p class="author">by Freida McFadden</p>
+    </div>
+    <div class="book-card" onclick="showBook('little')">
+      <img src="img/trending-booke-fourteen.png" alt="Little Women">
+      <h2>Little Women</h2>
+      <p class="author">by Louise Mary Alcott</p>
+    </div>
+    <div class="book-card" onclick="showBook('broken')">
+      <img src="img/trending-booke-fifteen.png" alt="Once Upon A Broken Heart">
+      <h2>Once Upon A Broken Heart</h2>
+      <p class="author">by Stephanie Garber</p>
+    </div>
+    <div class="book-card" onclick="showBook('educated')">
+      <img src="img/trending-booke-sixteen.png" alt="Educated">
+      <h2>Educated</h2>
+      <p class="author">by Tara Westover</p>
+    </div>
+    <div class="book-card" onclick="showBook('powerless')">
+      <img src="img/trending-booke-seventeen.png" alt="Powerless">
+      <h2>Powerless</h2>
+      <p class="author">by Lauren Roberts</p>
+    </div>
+    <div class="book-card" onclick="showBook('bell')">
+      <img src="img/trending-booke-eighteen.png" alt="The Bell Jar">
+      <h2>The Bell Jar</h2>
+      <p class="author">by Sylvia Plath</p>
+    </div>
+  </div>
+
+  <!-- BOOK DETAIL VIEW -->
+  <div class="book-detail" id="bookDetail">
+    <img id="detailImg" src="">
+    <h2 id="detailTitle"></h2>
+    <p class="author" id="detailAuthor"></p>
+    <p id="detailDesc"></p>
+    <button class="back-button" onclick="goBack()">← Back to all books</button>
+  </div>
+
+  <script src="script/descripBooks.js"></script>
+  </body>
+</html>
