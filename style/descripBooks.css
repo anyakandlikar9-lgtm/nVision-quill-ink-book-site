@@ -4,23 +4,7 @@ body {
     padding: 0;
     color: #333;
   }
-
-.top-bar {
-    width: 100%;
-    background-color: rgb(193, 187, 214);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-
+  
   /* BOOK GRID */
 .content {
     display: flex;
@@ -28,15 +12,16 @@ body {
     justify-content: center;
     gap: 30px;
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: 1000px;
   }
 
 .book-card {
     background: #fff;
+    margin-top: 50px;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 250px;
+    padding: 10px;
+    width: 200px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -62,6 +47,8 @@ body {
     font-style: italic;
     color: #6b5b95;
     font-size: 0.9em;
+    margin: 20px;
+    font-family: Merriweather;
   }
 
   /* BOOK DETAIL SECTION */
@@ -69,10 +56,12 @@ body {
     display: none;
     max-width: 700px;
     margin: 40px auto;
+    margin-top: 100px;
     background: #fff;
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Merriweather;
   }
 
 .book-detail img {
