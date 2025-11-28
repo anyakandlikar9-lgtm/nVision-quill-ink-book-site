@@ -51,7 +51,7 @@ const books = {
         title: "Funny Story",
         author: "Emily Henry",
         img: "img/trending-booke-nine.png",
-        desc: "Bree Prescott moves to a small town in search of peace, but what she finds is Archer Hale, a quiet, isolated man with a painful past. Their connection grows slowly, built on trust, silence, and understanding. This is an emotional, tender love story about healing and vulnerability. Have tissues ready. "
+        desc: "Daphne always loved the way her fiancé, Peter, told their story. How they met (on a blustery day), fell in love (over an errant hat), and moved back to his lakeside hometown to begin their life together. He really was good at telling it... right up until the moment he realized he was actually in love with his childhood best friend Petra."
       },
       normal: {
         title: "Normal People",
