@@ -22,6 +22,7 @@
   </head>
 
   <body>
+  <!-- HEADER STUFF-->
     <div class="quill-header">
       <div class="quill-left-section">
         <a href="./home.html" class="header-link">
@@ -50,115 +51,133 @@
         </a>
       </div>
     </div>
-    
+
   <!-- BOOK CONTENTTTT -->
      <div class="content" id="bookList">
     <div class="book-card" onclick="showBook('invisible')">
       <img src="img/book/trending-booke-one.png" alt="The Invisible Life of Addie Larue">
       <h2>The Invisible Life of Addie Larue</h2>
       <p class="author">by V.E. Schwab</p>
+      <p class="see">click card to see description.</p>
     </div>
     
     <div class="book-card" onclick="showBook('fearless')">
       <img src="img/book/trending-booke-two.png" alt="Fearless">
       <h2>Fearless</h2>
       <p class="author">by Lauren Roberts</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('seven')">
       <img src="img/book/trending-booke-three.png" alt="The Seven Year Slip">
       <h2>The Seven Year Slip</h2>
       <p class="author">by Ashley Poston</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('silent')">
       <img src="img/book/trending-booke-four.png" alt="The Silent Patient">
       <h2>The Silent Patient</h2>
       <p class="author">by Alex Michaelides</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('women')">
       <img src="img/book/trending-booke-five.png" alt="The Women">
       <h2>The Women</h2>
       <p class="author">by Kristin Hannah</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('evelyn')">
       <img src="img/book/trending-booke-six.png" alt="The Seven Husbands of Evelyn Hugo">
       <h2>The Seven Husbands of Evelyn Hugo</h2>
       <p class="author">by Taylor Jenkins Reid</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('bride')">
       <img src="img/book/trending-booke-seven.png" alt="Bride">
       <h2>Bride</h2>
       <p class="author">by Ali Hazelwood</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('voice')">
       <img src="img/book/trending-booke-eight.png" alt="Archer's Voice">
       <h2>Archer's Voice</h2>
       <p class="author">by Mia Sheridan</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('story')">
       <img src="img/book/trending-booke-nine.png" alt="Funny Story">
       <h2>Funny Story</h2>
       <p class="author">by Emily Henry</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('normal')">
       <img src="img/book/trending-booke-ten.png" alt="Normal People">
       <h2>Normal People</h2>
       <p class="author">by Sally Rooney</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('assistant')">
       <img src="img/book/trending-booke-eleven.png" alt="Assistant to the Villian">
       <h2>Assistant to the Villian</h2>
       <p class="author">by Hannah Nicole Maehrer</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('unmaking')">
       <img src="img/book/trending-booke-twelve.png" alt="The Unmaking of June Farrow">
       <h2>The Unmaking of June Farrow</h2>
       <p class="author">by Adrienne Young</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('housemaid')">
       <img src="img/book/trending-booke-thirteen.png" alt="The Housemaid">
       <h2>The Housemaid</h2>
       <p class="author">by Freida McFadden</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('little')">
       <img src="img/book/trending-booke-fourteen.png" alt="Little Women">
       <h2>Little Women</h2>
       <p class="author">by Louise Mary Alcott</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('broken')">
       <img src="img/book/trending-booke-fifteen.png" alt="Once Upon A Broken Heart">
       <h2>Once Upon A Broken Heart</h2>
       <p class="author">by Stephanie Garber</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('educated')">
       <img src="img/book/trending-booke-sixteen.png" alt="Educated">
       <h2>Educated</h2>
       <p class="author">by Tara Westover</p>
+      <p class="see">click card to see description.</p>
     </div>
 
     <div class="book-card" onclick="showBook('powerless')">
       <img src="img/book/trending-booke-seventeen.png" alt="Powerless">
       <h2>Powerless</h2>
       <p class="author">by Lauren Roberts</p>
+      <p class="see">click card to see description.</p>
     </div>
     
     <div class="book-card" onclick="showBook('bell')">
       <img src="img/book/trending-booke-eighteen.png" alt="The Bell Jar">
       <h2>The Bell Jar</h2>
       <p class="author">by Sylvia Plath</p>
+      <p class="see">click card to see description.</p>
     </div>
   </div>
 
@@ -168,7 +187,8 @@
     <h2 id="detailTitle"></h2>
     <p class="author" id="detailAuthor"></p>
     <p id="detailDesc"></p>
-    <button class="back-button" onclick="goBack()">← Back to all books</button>
+    <button class="back-button" onclick="window.location.href='trending.html'">← Back to all books</button>
+
   </div>
 
   <script src="script/descripBooks.js"></script>
