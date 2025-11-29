@@ -108,3 +108,13 @@ function booksToFind () {
 
 searchBooks.addEventListener('input', booksToFind);
 searchBooksButton.addEventListener('click', booksToFind);
+
+document.querySelectorAll('.product-container').forEach(container => {
+  container.addEventListener('click', (e) => {
+    if (e.target.closest('.add-to-cart-button')) return;
+    if (e.target.closest('.book-quantity-container')) return;
+
+    const productId = container.querySelector('.js-add-to-cart').dataset.productId;
+    window.location.href = `bookDescriptions.html?id=${productId}`;
+  });
+});
