@@ -94,3 +94,10 @@ body {
 .back-button:hover {
     background-color: rgb(247, 187, 207);
   }
+
+.see {
+    color: rgba(225, 150, 173, 0.774);
+    font-size: 10px;
+    margin: 20px;
+    font-family: Merriweather;
+}
