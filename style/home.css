@@ -61,6 +61,18 @@ button:hover{
   background-color: #8e69a2;
 }
 
+.credits-page {
+  text-align: center;
+}
+  .title {
+    font-size: 16px;
+  }
+
+.supersimpledev{
+  color: rgb(113, 110, 110);
+  font-size: 16px;
+}
+
 @media (max-width: 2000px) {
   body {
   background-image: url('../img/pink-bg.jpg');
