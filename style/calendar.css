@@ -33,11 +33,13 @@
     background-color: rgb(194, 151, 176);
 }
 
+/*Event*/
 .event {
     display: block;
     background-color: #F5E4E2;
     max-width: 140px;
     margin: 3px;
+    border-radius: 2px;
 }
 
 .event h4 {
@@ -59,8 +61,8 @@
 
 #event-description {
     font-size: 26px;
-    background-color: #F5E4E2;
-    padding: 10px;
+    background-color: #f7efee;
+    padding: 20px;
 }
 
 .left-arrow {
@@ -95,6 +97,8 @@ table caption {
     transform: translate(-50%, -50%);
     z-index: 3;
     background-color: #F5E4E2;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .fa-x {
