@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quill & Ink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/quill.css">
+    <link rel="stylesheet" href="style/book.css">
+    <link rel="stylesheet" href="style/quill-header.css">
+    <link rel="stylesheet" href="style/quill-general.css">
+  </head>
+  <body>
+<div class="quill-header">
+      <div class="quill-left-section">
+        <a href="./home.html" class="header-link">
+          <img class="quill-logo"
+          src="img/quill-logo.png">
+        </a>
+      </div>
+
+      <div class="quill-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="img/search.png">
+        </button>
+      </div>
+
+      <div class="quill-right-section">
+        <a class="order-link header-link" href="./return-order.html">
+          <span class="return-text">Returns</span>
+          <span class="order-text"> & Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="./checkout-books.html">
+          <img class="cart-icon" src="img/cart-empty.png">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text"></div>
+        </a>
+      </div>
+    </div>
+    <div>
+        <form action="home.html" method="post">
+      <legend>Create An Account</legend>   
+     
+  <label for="Phone Number or Email">Phone Number or Email:</label>
+  <input type="text" id="Phone Number or Email:" name="Phone Number or Email:" value="Phone Number or Email"><br><br>
+  <label for="Create Name">Name:</label>
+  <input type="text" id="Create Name" name="Name" value="Create Name"><br><br>
+  <label for="Create Username">Username:</label>
+  <input type="text" id="Create Username" name="Username" value="Username"><br><br>
+  <label for="Create Password">Password:</label>
+  <input type="password" id="Create Password" name="Password" value="Password"><br><br>
+  <label for="Confirm Password">Confirm Password:</label>
+  <input type="password" id="Confirm Password" name="Confirm Password"><br><br>
+    <label for="Create Shipping Adress">Shipping Adress: (Optional)</label>
+  <input type="text" id="Create Shipping Adress" name="Shipping Adress" value="Shipping Adress"><br><br>
+  <p>Genre Preferences: (Optional)</p>
+  <label for="Create Mystery">Mystery</label>
+  <input type="checkbox" id="Create Mystery" name="Create Mystery">
+  <label for="Create Fantasy">Fantasy</label>
+  <input type="checkbox" id="Create Fantasy" name="Create Fantasy">
+  <label for="Create Dystopia">Dystopia</label>
+  <input type="checkbox" id="Create Dystopia" name="Create Dystopia">
+    <label for="Create Adventure">Adventure</label>
+  <input type="checkbox" id="Create Adventure" name="Create Adventure">
+  <label for="Create Romance">Romance</label>
+  <input type="checkbox" id="Create Romance" name="Create Romance">
+  <label for="Create Science Fiction">Science Fiction</label>
+  <input type="checkbox" id="Create Science Fiction" name="Create Science Fiction">
+<br>
+  <input type="submit" value="Continue">
+  </form>
+  <form action="login.html" method="post">
+<p>Already have an account?</p>
+<button type="submit" name="action" value="preview">Sign In</button>
+</form>
+
+
+
+    </div>
+  </body>
